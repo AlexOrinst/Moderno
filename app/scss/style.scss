@@ -1,22 +1,2 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-.box {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
-}
-
-.test {
-    display: flex;
-    transition: all .3s;
-}
-
+@import '_vars';
+@import '_global';
