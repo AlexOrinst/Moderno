@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -14,6 +15,7 @@ body {
   line-height: 24px;
   color: $text;
   font-weight: 400;
+  height: 100%;
 }
 
 a {
@@ -28,6 +30,18 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
 }
 
 .container {
@@ -47,15 +61,48 @@ li {
     padding: 0 15px;
   }
 }
+.page-content {
+  background-color: $grey;
+}
 .title {
-    color: $bg;
-    @include f700;
-    font-size: 36px;
-    line-height: 60px;
-    text-align: center;
-    margin-bottom: 30px;
+  color: $bg;
+  @include f700;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .rate-star {
   display: inline-block;
   margin-right: 13px;
+}
+.breadcrumbs {
+  &__inner {
+    padding: 45px 0 40px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+    }
+
+    a {
+      color: #b0bec5;
+    }
+  }
 }
