@@ -25,4 +25,8 @@ if ($('.products__inner-box').length) {
       to: 600,
       prefix: "$"
     });
+
+    $('.icon-th-list').on('click', function(){
+      $('.products__item').addClass('list')
+    });
 });
