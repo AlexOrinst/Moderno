@@ -9,6 +9,7 @@
   "author": "Alex Orinstein",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.7",
     "clean-css": "^4.2.3",
     "cssmin": "^0.4.3",
