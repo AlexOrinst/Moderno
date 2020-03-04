@@ -315,7 +315,7 @@
   max-width: 730px;
   width: 100%;
   padding-top: 90px;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 .login__title {
   text-align: center;
@@ -336,7 +336,7 @@
     width: 100%;
     &::before {
       position: absolute;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       color: #fff;
       font-size: 14px;
       left: 18px;
@@ -344,10 +344,10 @@
     }
   }
   .login__label-name::before {
-    content: '\f007';
+    content: "\f007";
   }
   .login__label-pass::before {
-    content: '\f023';
+    content: "\f023";
   }
   input {
     height: 43px;
@@ -362,7 +362,6 @@
     &::placeholder {
       color: #fff;
       font-size: 14px;
-      
     }
   }
   button {
@@ -376,7 +375,7 @@
     @include f700;
     color: #000;
     text-align: center;
-    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75)
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
   }
 }
 .lost-pass {
@@ -393,11 +392,11 @@
   font-size: 18px;
   position: relative;
   &::before {
-    content: '\f044';
+    content: "\f044";
     position: absolute;
     top: 15px;
     left: 35px;
-    font-family: 'icomoon';
+    font-family: "icomoon";
   }
 }
 .fancybox-button svg path {
@@ -1584,7 +1583,7 @@ button.icon-sort {
   color: #fff;
 }
 .page-404__404 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 300px;
   color: #fff;
@@ -1594,7 +1593,7 @@ button.icon-sort {
   position: relative;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     background-image: url(../img/page-404.png);
     width: 150px;
     height: 292px;
@@ -1605,7 +1604,6 @@ button.icon-sort {
   font-size: 30px;
   margin: 30px;
   @include f300;
-  
 }
 .page-404__text {
   font-size: 18px;
@@ -1689,7 +1687,6 @@ button.icon-sort {
     position: absolute;
     left: 0;
     font-size: 24px;
-
   }
 }
 .contact__info-content {
@@ -1750,6 +1747,97 @@ button.icon-sort {
   }
 }
 //end contact
+
+//start settings
+.settings {
+  padding-bottom: 100px;
+}
+.product-one__tabs.settings__tabs {
+  display: flex;
+  .tabs {
+    min-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    border: 1px solid #dedede;
+    border-bottom: none;
+    text-align-last: left;
+    display: block;
+    height: 100%;
+    span {
+      display: block;
+      background-color: #fff;
+      border-bottom: 1px solid #dedede;
+      padding: 17px 17px 17px 50px;
+      color: #707070;
+      font-size: 14px;
+      @include f500;
+      &.active {
+        border-bottom: 1px solid $green;
+        color: #37474f;
+        &::before {
+          color: $green;
+        }
+      }
+      &::before {
+        left: 24px;
+        color: #444444;
+      }
+    }
+  }
+  .tabs .tab + .tab {
+    border-left: none;
+  }
+  .tab_content {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+.page-box {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  min-height: 100%;
+}
+.page-box__title {
+  border-bottom: 1px solid #dedede;
+  padding: 18px 34px;
+  font-size: 24px;
+  @include f500;
+  color: $bg;
+}
+.page-box__content {
+  padding: 30px 35px 80px;
+}
+.settings__line {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  label {
+    width: 260px;
+    color: #444444;
+  }
+  input {
+    max-width: 540px;
+    width: 100%;
+    height: 40px;
+    color: #000000;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+  }
+  select {
+    max-width: 540px;
+    width: 100%;
+    height: 40px;
+    color: #707070;
+    background-color: #f9f9f9;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+
+  }
+}
+//end settings
 
 //media
 @import "media";
