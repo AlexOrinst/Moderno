@@ -54,7 +54,7 @@ if ($('.products__inner-box').length) {
         return false;
       });
 
-    
+      $('input[type="file"], select').styler();
 
 
 });
